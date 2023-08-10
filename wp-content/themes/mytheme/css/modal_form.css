@@ -1,0 +1,175 @@
+.modal-dialog {
+    zoom: 0.7;
+    margin-top: 100px;
+}
+
+.modal-header .btn-close:focus {
+    box-shadow: none;
+}
+
+.modal-header .btn-close {
+    background: unset;
+    color: #F17834;
+    opacity: 1;
+    height: auto;
+    width: auto;
+}
+
+.modal-header .btn-close i {
+    font-size: 60px;
+}
+
+.modal .modal-header::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: inherit;
+    background: #F17834;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.modal .modal-header {
+    padding-top: 7px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-bottom: 0;
+    position: relative;
+}
+
+.modal .modal-body {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.modal .modal-title {
+    color: #9A3325;
+    font-family: 'foro';
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 89px;
+}
+
+.modal .modal-dialog {
+    --bs-modal-border-radius: 0;
+    border-radius: 0;
+    max-width: 956px;
+}
+
+.modal .modal-body form p:nth-child(2) {
+    margin-top: 20px;
+}
+
+.modal .modal-body form p > label {
+    width: 100%;
+}
+
+.modal .modal-body form p > label > span:nth-child(1) {
+    color: #000;
+    font-family: 'foro-sans';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.modal .modal-body form p > label > span:nth-child(1) > i {
+    color: #FF0303;
+    font-family: 'Microsoft Sans Serif';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.modal .modal-body form p > label > .wpcf7-form-control-wrap > input,
+.modal .modal-body form p > label > .wpcf7-form-control-wrap > textarea {
+    border: none;
+    border-radius: 5px;
+    background: #DFDFDF;
+    width: 100%;
+}
+
+.modal .modal-body form p > label > .wpcf7-form-control-wrap > input {
+    height: 60px;
+}
+
+.modal .modal-body form p > label > .wpcf7-form-control-wrap > textarea {
+    resize: none;
+    height: 199px;
+}
+
+.modal .modal-body form p:nth-child(7) {
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+}
+
+.modal .modal-body form p > .wpcf7-submit {
+    border: 0;
+    width: 325px;
+    height: 83px;
+    border-radius: 18px;
+    background: #F17834;
+
+    color: #FFF;
+    text-align: center;
+    font-family: 'foro';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.modal .modal-body form p > .wpcf7-spinner {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+@media ( max-width: 1060px ) {
+    .modal .modal-dialog {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 85%;
+    }
+
+    .modal .modal-title {
+        font-size: 45px;
+    }
+
+    .modal .modal-body form p > .wpcf7-submit {
+        font-size: 30px;
+        width: 300px;
+        height: 55px;
+    }
+}
+
+@media ( max-width: 500px ) {
+    .modal .modal-header::after {
+        margin-right: 20px;
+        margin-left: 20px;  
+    }
+
+    .modal .modal-header {
+        padding-right: 20px;
+        padding-left: 20px;  
+    }
+
+    .modal .modal-body {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media ( max-width: 450px ) {
+    .modal .modal-body form p > .wpcf7-submit {
+        width: 80%;
+    }
+}
